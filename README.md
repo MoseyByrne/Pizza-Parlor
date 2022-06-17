@@ -7,40 +7,39 @@ Expected Output: 12
 Test: "It should return a price for the instance based on size and meat choice"
 Code: pizza("No Meat", "Large");
 Expected Output: 15
-# _{Application Name}_
 
-#### By _**{List of contributors}**_
 
-#### _{Brief description of application}_
+# Pizza Parlor
+
+#### By Mo Byrne
+
+#### A webpage to place a pizza order.
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
-
+* Javascript
+* JQuery
+* HTML
+* CSS
+* Bootstrap
+  
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+This webpage was made by Mo Byrne to be their Independent Project and Code Review for the Object-Oriented JavaScript lessons in the Introduction to Programming part of Epicodus full-time C#/REACT track 2022. There is a form for selecting a pizza size and choice of meat. The page will return the cost of the pizza.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* Clone repository to your local
+* Move into mr-robogers-neiborhood folder
+* Open index.HTML
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* user input doesn't return order total.
+
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+MIT
 
-Copyright (c) _date_ _author name(s)_
+Copyright (c) 06/17/2022 Mo Byrne
