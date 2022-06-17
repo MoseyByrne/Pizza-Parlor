@@ -1,7 +1,7 @@
 // Business Logic
 
-function Pizza(topping, size) {
-  this.topping = topping;
+function Pizza(meat, size) {
+  this.meat = meat;
   this.size = size;
   this.price;
 }
@@ -18,5 +18,14 @@ Pizza.prototype.price = function() {
   if (this.topping === "Pepperoni") {
     this.price += 2;
   }
-  console.log(this.price);
+  return this.price;
 }
+
+// UI logic
+
+$(document).ready(function() {
+  $("form.Order").submit(function(event) {
+    event.prevntDefault();
+    $("#total").show();
+  })  
+})
