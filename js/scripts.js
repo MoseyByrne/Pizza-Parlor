@@ -24,10 +24,10 @@ Pizza.prototype.price = function() {
 // UI logic
 
 $(document).ready(function() {
-  $("#placeOrder").submit(function(event) {
+  $("form#Order").submit(function(event) {
     event.prevntDefault();
    
-    const meat = $("#meat-topping").val();
+    const meat = $("#meat").val();
     const size = $("#size").val();
     let pizza = new Pizza(meat, size);
     pizza.price();
