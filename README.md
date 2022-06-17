@@ -1,4 +1,12 @@
+Describe: Pizza.price(meat, size)
 
+Test: "It should return a price for the instance based on size and meat choice"
+Code: pizza("Sausage", "Small");
+Expected Output: 12
+
+Test: "It should return a price for the instance based on size and meat choice"
+Code: pizza("No Meat", "Large");
+Expected Output: 15
 # _{Application Name}_
 
 #### By _**{List of contributors}**_

@@ -18,7 +18,10 @@ Pizza.prototype.price = function() {
   if (this.meat === "Pepperoni" || "Sausage") {
     this.price += 2;
   }
-  $("#receipt").append(this.price);
+  if (this.meat === "No Meat") {
+    this.price -= 2;
+  }
+  return this.price;
 }
 
 // UI logic
@@ -26,9 +29,9 @@ Pizza.prototype.price = function() {
 $(document).ready(function() {
   $("form#Order").submit(function(event) {
     event.prevntDefault();
-   
-    const meat = $("#meat").val();
-    const size = $("#size").val();
+    $("#total").show();
+    const meat = ($("input#meat").val());
+    const size = ($("input#size").val());
     let pizza = new Pizza(meat, size);
     pizza.price();
     $("#total").show();
