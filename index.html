@@ -11,17 +11,16 @@
 
     <div class="container">
       <div class="jumbotron">
-        <h1 class="title">Momo's Pizza Pies</h1>
+        <h1 class="title">Pizza Pie</h1>
         <h2>Place an order:</h2>
       </div>
       
-
       <form class="Order">
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center box">
           <div class="col-5 box">
-            <label for="choose-size">Pie Size:</label>
-            <Select name="size" class="choose-size">
+            <label for="size">Pie Size:</label>
+            <Select name="size" id="size">
               <option value=""> --Please choose a size--</option> 
               <option>Small</option>
               <option>Medium</option>
@@ -30,8 +29,8 @@
           </div>
         
           <div class="col-5 box">  
-            <label for="choose-meat-topping">Meat selection</label>
-            <Select name="meat-topping" class="choose-meat-topping">
+            <label for="meat">Meat selection:</label>
+            <Select name="meat" id="meat">
               <option value="">--Please choose one--</option> 
               <option>Pepperoni</option>
               <option>Sausage</option>
@@ -40,11 +39,16 @@
           </div>
         </div>
 
-        <div class="buttonDiv">
-          <button type="submit" class="btn btn-primary">Place Order</button>
-        </div>
+            <div class="col-5 box">
+              <button type="submit" class="btn btn-primary" id="placeOrder">Place Order</button>
+            </div>
+          </div>
 
+        
       </form>
+      <div id="total">
+        <h4>Your total is: $ <span class="receipt"></span></h4>
+      </div>
     </div>
   </body>
 </html> 

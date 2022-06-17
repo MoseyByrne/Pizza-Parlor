@@ -15,17 +15,23 @@ Pizza.prototype.price = function() {
   if (this.size === "Small") {
     this.price += 0;
   }
-  if (this.topping === "Pepperoni") {
+  if (this.meat === "Pepperoni" || "Sausage") {
     this.price += 2;
   }
-  return this.price;
+  $("#receipt").append(this.price);
 }
 
 // UI logic
 
 $(document).ready(function() {
-  $("form.Order").submit(function(event) {
+  $("#placeOrder").submit(function(event) {
     event.prevntDefault();
+   
+    const meat = $("#meat-topping").val();
+    const size = $("#size").val();
+    let pizza = new Pizza(meat, size);
+    pizza.price();
     $("#total").show();
+    $("form").hide();
   })  
 })
