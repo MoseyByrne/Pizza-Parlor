@@ -19,13 +19,15 @@
 
         <div class="row justify-content-center box">
           <div class="col-5 box">
-            <label for="size">Pie Size:</label>
-            <Select name="size" id="size">
-              <option value=""> --Please choose a size--</option> 
-              <option value="Small">Small</option>
-              <option value="Medium">Medium</option>
-              <option value="Large">Large</option>
-            </Select>
+            <div class="form-group" id="size">
+              <label for="size">Pie Size:</label>
+              <Select name="size" id="size">
+                <option value=""> --Please choose one--</option> 
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+              </Select>
+            </div>
           </div>
         
           <div class="col-5 box">  
@@ -40,14 +42,13 @@
         </div>
 
             <div class="col-5 box">
-              <button type="submit" class="btn btn-primary" id="placeOrder">Place Order</button>
+              <button type="submit" class="btn btn-primary" id="total">Place Order</button>
             </div>
           </div>
 
         
       </form>
-      <div id="total">
-        <h4>Your total is: $ <span class="receipt"></span></h4>
+     <p id="total"></p>
       </div>
     </div>
   </body>

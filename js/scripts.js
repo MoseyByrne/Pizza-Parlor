@@ -29,12 +29,13 @@ Pizza.prototype.price = function() {
 $(document).ready(function() {
   $("form#Order").submit(function(event) {
     event.prevntDefault();
-    $("#total").show();
-    const meat = ($("input#meat").val());
-    const size = ($("input#size").val());
+  
+    const meat = $("select#meat").val();
+    const size = $("select#size").val();
     let pizza = new Pizza(meat, size);
     pizza.price();
     $("#total").show();
-    $("form").hide();
+    $("#total").text(pizza());
+   
   })  
 })
