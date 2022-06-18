@@ -28,7 +28,7 @@ Pizza.prototype.price = function() {
 
 $(document).ready(function() {
   $("form#Order").submit(function(event) {
-    event.prevntDefault();
+    event.preventDefault();
   
     const meat = $("select#meat").val();
     const size = $("select#size").val();
