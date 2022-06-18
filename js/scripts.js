@@ -21,7 +21,7 @@ Pizza.prototype.price = function() {
   if (this.meat === "No Meat") {
     this.price -= 2;
   }
-  return this.price;
+  $(".receipt").append(this.price);
 }
 
 // UI logic
@@ -35,7 +35,7 @@ $(document).ready(function() {
     let pizza = new Pizza(meat, size);
     pizza.price();
     $("#total").show();
-    $("#total").text(pizza());
+    $("#total").text(this.price);
    
   })  
 })
