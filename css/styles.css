@@ -1,0 +1,35 @@
+body {
+  background-color: #003600;
+  color: #f50429;
+ 
+  
+}
+
+.title {
+  background-color:#582f00;
+  border: 10px ridge #281100;
+  margin-top: 2%;
+  padding: 1%;
+  text-align: center;
+}
+
+.box {
+  background-color:#e97e03;
+  border: 10px ridge #281100;
+  margin: 2%;
+  padding: 1%;
+  background-image: url(https://assets.dragoart.com/images/18057_501/how-to-draw-pizza-for-kids_5e4cc1ab844200.62088528_85799_5_3.png);
+}
+
+.btn {
+  background-color: #f70328;
+  color:#e0f5e0;
+}
+
+.jumbotron {
+  background-image:  url('../img/hp.jpg');
+  border: 10px ridge #1b0161;
+  margin-top: 2%;
+  padding: 20%;
+  text-align: center;
+}
