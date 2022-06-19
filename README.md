@@ -30,7 +30,7 @@ This webpage was made by Mo Byrne to be their Independent Project and Code Revie
 ## Setup/Installation Requirements
 
 * Clone repository to your local
-* Move into mr-robogers-neiborhood folder
+* Move into Pizza-Parlor folder
 * Open index.HTML
 
 ## Known Bugs

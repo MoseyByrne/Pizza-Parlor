@@ -10,18 +10,31 @@ function Pizza(meat, size) {
 Pizza.prototype.price = function() {
   this.price = 10;
   if (this.size === "Large") {
-    this.price += 5;
-  } 
-  if (this.size === "Small") {
-    this.price += 0;
-  }
-  if (this.meat === "Pepperoni" || "Sausage") {
+    this.price += 6;
+  }if (this.size === "Large" && this.meat === "Sausage" || "Pepperoni"){
+    this.price += 4;
+  }if (this.size === "Large" && this.meat === "No Meat"){
+    this.price -= 4;
+  } if (this.size === "Medium") {
+    this.price -= 3;
+  }if (this.size === "Medium" && this.meat === "Sausage" || "Pepperoni"){
     this.price += 2;
-  }
-  if (this.meat === "No Meat") {
+  }if (this.size === "Medium" && this.meat === "No Meat"){
     this.price -= 2;
+  }if (this.size === "Small") {
+    this.price -= 6;
+  }if (this.size === "Small" && this.meat === "Sausage" || "Pepperoni"){
+    this.price += 1;
+  }if (this.size === "Small" && this.meat === "No Meat"){
+    this.price -= 1;
   }
-  $(".receipt").append(this.price);
+
+ 
+
+// // for(index= 0; index < this.topping; index++) {
+// //       this.price += 1;
+// } 
+  $(".receipt").text(this.price);
 }
 
 // UI logic
@@ -39,3 +52,5 @@ $(document).ready(function() {
    
   })  
 })
+
+  
